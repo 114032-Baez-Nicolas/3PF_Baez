@@ -7,8 +7,8 @@
     class="sidenav"
     [fixedInViewport]="isMobile"
     [fixedTopGap]="0"
-    [fixedBottomGap]="0">
-
+    [fixedBottomGap]="0"
+  >
     @if (isMobile) {
     <div class="sidenav-header-mobile">
       <h2 class="app-title">Sistema de Gestión Educativa</h2>
@@ -18,7 +18,7 @@
     </div>
     }
 
-    <app-navbar></app-navbar>
+    <app-navbar (menuItemClicked)="isMobile ? sidenav.close() : null"></app-navbar>
   </mat-sidenav>
 
   <mat-sidenav-content class="sidenav-content">
