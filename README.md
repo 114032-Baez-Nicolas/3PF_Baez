@@ -9,7 +9,7 @@ Aplicación web completa para administración académica: CRUD de Alumnos y Curs
 1. **Clonar el repositorio**
 ```bash
    git clone https://github.com/114032-Baez-Nicolas/3PF_Baez.git
-   cd 3PF-Baez
+   cd 3PF_Baez
 ```
 
 2. **Instalar dependencias**
