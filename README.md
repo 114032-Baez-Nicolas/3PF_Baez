@@ -87,7 +87,7 @@ Aplicación web completa para administración académica: CRUD de Alumnos y Curs
 ## 📂 Estructura del Proyecto
 ```
 src/app/
-├── core/           # Servicios, guards, modelos
+├── core/           # Servicios, guards, modelos, store
 ├── features/       # Módulos de funcionalidad
 │   ├── auth/       # Autenticación
 │   ├── alumnos/    # Gestión de alumnos
