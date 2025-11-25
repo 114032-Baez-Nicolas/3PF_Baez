@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "3PF_Baez": {
+    "2PF-Baez": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,6 +23,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "outputPath": "docs",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
@@ -35,6 +36,7 @@
               }
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.css"
             ]
           },
@@ -43,8 +45,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -66,10 +68,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "3PF_Baez:build:production"
+              "buildTarget": "2PF-Baez:build:production"
             },
             "development": {
-              "buildTarget": "3PF_Baez:build:development"
+              "buildTarget": "2PF-Baez:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -98,5 +100,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "498f9097-983c-4b27-8100-8f867612d4a0"
   }
 }

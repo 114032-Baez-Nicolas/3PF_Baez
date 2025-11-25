@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
     this.themeService.isDarkMode$.subscribe((isDark) => {
       this.isDarkMode = isDark;
     });
-    // Redirigir si está autenticado
+
     this.isAuth$.subscribe((isAuth) => {
       if (isAuth) {
         this.router.navigate(['/inicio']);

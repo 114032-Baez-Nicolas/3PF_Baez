@@ -35,7 +35,7 @@ describe('AuthService', () => {
       done();
     });
     const req = httpMock.expectOne('http://localhost:3000/users?username=testuser');
-    req.flush([]); // No existe el usuario
+    req.flush([]);
     const postReq = httpMock.expectOne('http://localhost:3000/users');
     postReq.flush(mockUsuario);
   });
@@ -46,7 +46,7 @@ describe('AuthService', () => {
       done();
     });
     const req = httpMock.expectOne('http://localhost:3000/users?username=testuser');
-    req.flush([mockUsuario]); // Ya existe
+    req.flush([mockUsuario]);
   });
 
   it('debería hacer login exitoso', (done) => {

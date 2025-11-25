@@ -11,7 +11,7 @@ export class ThemeService {
 
   constructor() {
     const savedTheme = localStorage.getItem(this.THEME_KEY);
-    // Por defecto, modo oscuro si no hay preferencia guardada
+
     const isDark = savedTheme ? savedTheme === 'dark' : true;
     this.isDarkModeSubject = new BehaviorSubject<boolean>(isDark);
     this.isDarkMode$ = this.isDarkModeSubject.asObservable();

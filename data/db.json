@@ -31,6 +31,12 @@
       "password": "1234p",
       "role": "USER",
       "nombre": "Nicolás"
+    },
+    {
+      "id": "527465fe-8530-428a-bd96-e18b971eec65",
+      "username": "osasprueba@gmail.com",
+      "password": "1234p",
+      "nombre": "osas"
     }
   ],
   "courses": [
@@ -60,14 +66,6 @@
     }
   ],
   "students": [
-    {
-      "id": "ba28",
-      "nombre": "Nicolás",
-      "apellido": "Báez",
-      "email": "nicolasbaez1201@gmail.com",
-      "fechaInscripcion": "2025-11-23T10:10:26.193Z",
-      "activo": true
-    },
     {
       "id": "a101",
       "nombre": "Lucía",

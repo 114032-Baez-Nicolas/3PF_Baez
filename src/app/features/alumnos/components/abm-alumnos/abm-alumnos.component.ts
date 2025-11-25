@@ -37,7 +37,7 @@ export class AbmAlumnosComponent implements OnInit {
   onSubmit(): void {
     if (this.alumnoForm.valid) {
       const { id, ...alumnoSinId } = this.alumnoForm.value;
-      // Convertir fecha a string ISO y asignar UUID
+
       const alumnoParaGuardar = {
         id: uuidv4(),
         ...alumnoSinId,

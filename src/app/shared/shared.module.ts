@@ -28,11 +28,9 @@ import { RouterModule } from '@angular/router';
   declarations: [NombreCompletoPipe, TituloResaltadoDirective],
   imports: [CommonModule],
   exports: [
-    // Pipes y Directivas
     NombreCompletoPipe,
     TituloResaltadoDirective,
 
-    // Módulos de Angular Material
     MatTableModule,
     MatButtonModule,
     MatIconModule,
